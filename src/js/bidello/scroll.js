@@ -4,7 +4,12 @@ import { lerp } from "math-toolbox";
 class Scroll extends component() {
   init() {
     this.$scroll = document.getElementById("SITE_CONTAINER")
-    this.$height = document.getElementsByClassName('h')[0]
+    // create a div with class h
+    this.$height = document.createElement('div')
+    this.$height.classList.add('h')
+    // append the div to the body
+    document.body.appendChild(this.$height)
+    
 
     this.calculateHeight = this.calculateHeight.bind(this)
 
