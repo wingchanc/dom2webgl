@@ -3,7 +3,7 @@ import { lerp } from "math-toolbox";
 
 class Scroll extends component() {
   init() {
-    this.$scroll = document.getElementsByTagName('main')[0]
+    this.$scroll = document.getElementById("SITE_CONTAINER")
     this.$height = document.getElementsByClassName('h')[0]
 
     this.calculateHeight = this.calculateHeight.bind(this)
